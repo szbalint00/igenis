@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+}
+
+body{
+    margin:0;
+}
+
+.like{
+    width:100%;
+}
+
+section div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrong {
+    height: 100vh;
+    width: 50%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.wrong p {
+    color: rgb(237, 73, 73);
+    font-size: 10vw;
+}
+.right {
+    height: 100vh;
+    width: 50%;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.right p {
+    color: rgb(2, 56, 2);
+    font-size: 10vw;
+}
+.filmkartya {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+    overflow: hidden;
+    background: rgba(28, 1, 1, 0.877);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    border-color: rgba(222, 184, 135, 0.877);
+    border: 2%;
+    border-style: solid;
+
+
+}
+.filmkartya img {
+    
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    
+}
+.filmkartya h1 {
+    align-items: center;
+    text-align: center;
+    height: 75%;
+    font-size: 2vw;
+    color: rgba(222, 184, 135, 0.877);
+}
+.duration, .year, .genre, .description, .rating, .film_cim{
+    display: none;
+}
+.wrong:hover {
+    background: salmon;
+}
+.right:hover {
+    background: lightgreen;
+}
+div.filmkartya:hover .duration{
+    display: flex;
+}
+div.filmkartya:hover .year{
+    display: flex;
+}
+div.filmkartya:hover .genre{
+    display: flex;
+}
+div.filmkartya:hover .description{
+    display: flex;
+}
+div.filmkartya:hover .rating{
+    display: flex;
+}
+div.filmkartya:hover .switch{
+    display: flex;
+    align-items: left;
+}
+div.filmkartya:hover .genre{
+    display: flex;
+}
+div.filmkartya:hover .description_cim{
+    display: flex;
+    
+}
+div.filmkartya:hover .film_cim {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+div.filmkartya .switch{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left   ;
+    margin: 20px;
+}
+div.filmkartya .switch p{
+    margin: 5px;
+}
+div.filmkartya:hover img{
+    opacity: 0.1;
+}
+div.filmkartya:hover h1{
+    color: white;
+}
+
+div.filmkartya:hover{
+    background: rgba(28, 1, 1, 0.877);
+    color: white;
+
+}
+@media (max-width:1024px){
+    .like{
+        margin:30px auto;
+    }
+    body{
+        background: rgb(77,8,8);
+        background: radial-gradient(circle, rgba(77,8,8,1) 0%, rgba(28,1,1,0.8744747899159664) 100%);;
+    }
+    .right{
+        margin-left: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 70px;
+
+    }
+    .right p{
+        font-size: 30px;
+    }
+    .wrong{
+        width: 80px;
+        height: 80px;
+        border-radius: 70px;
+        
+    }
+    .wrong p{
+        font-size: 30px;
+    }
+    .filmkartya{
+        margin-top:30px;
+        position: static;
+        top:30px;
+        width: 75%;
+    }
+    .valasztas{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .switch{
+        font-size: 4vw;
+        width: 75%;
+    }
+    div.filmkartya:hover .switch p{
+        margin: 3px;
+    }
+       
+    div .switch h1 {
+        font-size:2rem;
+    }
+
+}

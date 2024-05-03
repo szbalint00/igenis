@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Rammetto+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rammetto+One&display=swap');
+
+body{
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: rgba(255, 232, 203, 0.877);
+    font-size: 5rem;
+    background-image:url("https://img.freepik.com/premium-vector/film-reel-strip-abstract-frame-background-design-vector-illustration-isolated-white-background_623474-470.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#restartButton{
+    padding: 10px 20px;
+    margin: 20px 10px;
+    font-size: 3rem;
+    border-radius: 40px;
+    background-color: rgb(245, 26, 26);
+    color: rgba(255, 232, 203, 0.877);
+    font-family: "Rammetto One", sans-serif;
+    /*background-color: rgba(28, 1, 1,0.2);*/
+    /*margin-top: 10%;*/
+    border: 1%;
+}
+
+#restartButton:hover{
+    background-color: goldenrod;
+    color: black;
+}
+
+section{    
+    border-radius: 200px;
+    background-color: rgba(35, 6, 6, 0.877);
+    color: white;
+    padding: 0;
+    border: 0;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div{
+   /* margin-left: 25%;
+    margin-right: 25%;*/
+    border-radius: 180px;
+}
+
+p{
+    /*margin-top: 30%;*/
+    margin-bottom: 0%;
+}
+
+/*@media (max-width: 1024px){
+    body{
+        font-size: 5vw;
+        margin: 1%;
+    }
+
+    #restartButton{
+        font-size: 4vw;
+    }
+}*/
+
+@media (max-width: 1100px){
+    section{
+        border-radius: 0;
+    }
+
+    body{
+        background-image: url("https://scontent.fgrx1-1.fna.fbcdn.net/v/t1.15752-9/440096679_403188552626998_7473013126939408446_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JPvKMSpSLX8Q7kNvgHFzZRk&_nc_ht=scontent.fgrx1-1.fna&oh=03_Q7cD1QGP9_J-REIK0hTL7rVz3pSy8F0FHUEjsefXgK5Lelr8uA&oe=665B11CE");
+        background-repeat: repeat;
+        font-size: 6vw;
+    }
+    #restartButton{
+        font-size: 4vw;
+    }
+}
